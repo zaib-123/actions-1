@@ -9,13 +9,17 @@ jobs:
             - name: checkout Repo
               uses: actions/checkout@v4
 
-            - name: welcome message
-              run: echo "my first workflow"
+            - name: List and Read file
+              run: |
+                echo "my first workflow"
+                ls -lrt
+                cat README.md
+            - name: Generate ASCII value
+              run: cowsay -f dragon "run for cover, i am a Dragon...RAWR" >> dragon.txt
+            #- name: list a file
+             # run: ls
 
-            - name: list a file
-              run: ls
-              
-            - name: read file
-              run: cat README.md
+            #- name: read file
+             # run: cat README.md
 
             
