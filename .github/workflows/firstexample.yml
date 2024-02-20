@@ -15,7 +15,7 @@ jobs:
                 ls -lrt
                 cat README.md
             - name: Generate ASCII value
-              run: cowsay -f dragon "run for cover, i am a Dragon...RAWR" >> dragon.txt
+              run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
             #- name: list a file
              # run: ls
 
