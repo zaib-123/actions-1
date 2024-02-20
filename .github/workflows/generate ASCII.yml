@@ -11,8 +11,10 @@ jobs:
 
             - name: list file repo
               run: ls -lrt
-
+              
             - name: Executing shell script
-              run: ./ascii-script.sh
+              run: |
+                chmod 400 ascii-script.sh
+                ./ascii-script.sh
 
             
